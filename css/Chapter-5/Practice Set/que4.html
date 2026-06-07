@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Q4</title>
+
+    <style>
+        .container {
+            position: relative;
+        }
+        
+        .box1 {
+            background-color: red;
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+            position: relative;
+            margin: 30px;
+            z-index: 300;
+        }
+        
+        .box2 {
+            background-color: green;
+            position: absolute;
+            border: 2px solid black;
+            height: 300px;
+            width: 400px;
+            top: 0;
+            z-index: 222;
+        }
+        
+        .box3 {
+            background-color: blueviolet;
+            position: absolute;
+            border: 2px solid black;
+            height: 500px;
+            width: 200px;
+            top: 0;
+            z-index: 33;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+
+</html>

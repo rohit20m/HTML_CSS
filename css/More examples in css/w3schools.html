@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: green;
+            text-align: center;
+            padding: 10px 10px;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: black;
+            color: white;
+        }
+        
+        a {
+            float: left;
+            text-decoration: none;
+            display: block;
+            color: white;
+            padding: 10px 10px;
+        }
+        
+        a:hover {
+            background-color: whitesmoke;
+            color: black;
+            transition: 1s;
+        }
+        
+        .row {
+            background-color: aqua;
+        }
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+        
+        .footer {
+            background-color: green;
+            text-align: center;
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <div class="topnav">
+        <ul type="none">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>Side Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat inventore maiores nostrum non hic blanditiis. Eos, rerum, provident officia earum dolor, aliquid distinctio cum eligendi aperiam exercitationem commodi voluptatum sequi!</p>
+        </div>
+
+        <div class="column">
+            <h2>Middle Content</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet sit suscipit totam quaerat incidunt possimus quam illo, nemo quas ipsa placeat, hic modi expedita earum nam. Debitis delectus temporibus doloremque dolor vitae impedit dicta praesentium,</p>
+            <p> modi, cumque nesciunt vel iste maxime vero fugit sunt sed laborum illo? Architecto culpa dolorem repudiandae consequuntur, fuga recusandae voluptates quae debitis cupiditate non sit.</p>
+        </div>
+
+        <div class="column">
+            <h2>Side Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quod quae, iste praesentium accusamus ipsa vitae hic nobis, eos voluptatibus repellendus nam animi ullam aliquam dolor est doloremque distinctio? Qui.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+
+</html>

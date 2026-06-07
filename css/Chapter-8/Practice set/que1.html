@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Progress Bar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .progress {
+            background-color: red;
+            height: 4px;
+            animation: progress 1s ease-in-out 1;
+        }
+        
+        header {
+            background-color: greenyellow;
+            width: 100vw;
+            height: 15vh;
+        }
+        
+        div {
+            background-color: blueviolet;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        @keyframes progress {
+            0% {
+                width: 0;
+            }
+            60% {
+                width: 60vw;
+            }
+            100% {
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <div></div>
+</body>
+
+</html>

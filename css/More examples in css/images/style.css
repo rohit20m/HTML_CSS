@@ -1,0 +1,32 @@
+/* Universal Selectors - It will get apply for all selectors/Tags */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navbar */
+
+#navbar {
+    display: flex;
+}
+
+
+/* Navbar Logo*/
+
+#logo {
+    margin: 10px 30px;
+}
+
+
+/*Logo Image*/
+
+#logo img {
+    height: 64px;
+    margin: 3px 16px;
+}
+
+#nav ul {
+    text-decoration: none;
+}

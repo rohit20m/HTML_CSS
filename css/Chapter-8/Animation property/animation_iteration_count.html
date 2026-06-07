@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        div {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            border: 2px solid black;
+            animation-name: mymove;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes mymove {
+            from {
+                width: 100px;
+                height: 100px;
+            }
+            to {
+                width: 700px;
+                height: 700px;
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

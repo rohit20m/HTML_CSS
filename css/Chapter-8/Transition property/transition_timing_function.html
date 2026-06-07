@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>Transition Timing Function</title>
+
+<head>
+    <style>
+        .div1 {
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+            transition: width 2s, height 2s;
+            transition-timing-function: linear;
+        }
+        
+        .div2 {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            transition: width 2s, height 2s;
+            transition-timing-function: ease;
+        }
+        
+        .div3 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transition: width 2s, height 2s;
+            transition-timing-function: ease-in;
+        }
+        
+        .div4 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: width 2s, height 2s;
+            transition-timing-function: ease-out;
+        }
+        
+        .div5 {
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            transition: width 2s, height 2s;
+            transition-timing-function: ease-in-out;
+        }
+        
+        div:hover {
+            width: 200px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transition Timing Function</h1>
+
+    <div class="div1">Linear</div>
+    <br>
+    <div class="div2">Ease</div>
+    <br>
+    <div class="div3">Ease-in</div>
+    <br>
+    <div class="div4">Ease-out</div>
+    <br>
+    <div class="div5">Ease-in-out</div>
+</body>
+
+</html>
